@@ -1,12 +1,56 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Analisador de Apostas</title>
+  <title>Analisador de Apostas Esportivas</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Link para a biblioteca Chart.js para gráficos interativos -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-  <h1>Bem-vindo ao Analisador de Apostas Esportivas</h1>
-  <p>Este site irá te ajudar a analisar apostas focadas em cartões amarelos e escanteios!</p>
+  <header>
+    <h1>Analisador de Apostas Esportivas</h1>
+    <nav>
+      <ul>
+        <li><a href="#estatisticas">Estatísticas</a></li>
+        <li><a href="#graficos">Gráficos</a></li>
+        <li><a href="#tabela">Tabela de Jogos</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="estatisticas">
+      <h2>Estatísticas de Cartões e Escanteios</h2>
+      <div id="estatisticas-container">
+        <!-- Conteúdo gerado dinamicamente -->
+      </div>
+    </section>
+    <section id="graficos">
+      <h2>Gráficos de Desempenho</h2>
+      <canvas id="graficoDesempenho"></canvas>
+    </section>
+    <section id="tabela">
+      <h2>Tabela de Jogos Recentes</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Data</th>
+            <th>Time Mandante</th>
+            <th>Time Visitante</th>
+            <th>Cartões Amarelos</th>
+            <th>Escanteios</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Linhas de dados geradas dinamicamente -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Analisador de Apostas Esportivas. Todos os direitos reservados.</p>
+  </footer>
+  <script src="scripts.js"></script>
 </body>
 </html>
